@@ -1,0 +1,149 @@
+import React from 'react';
+import TextInput from '../TextInput';
+import { mount, shallow } from 'enzyme';
+describe('TextInput', function () {
+  describe('renders as expected', function () {
+    var wrapper = mount(React.createElement(TextInput, {
+      id: "test",
+      className: "extra-class",
+      labelText: "testlabel",
+      helperText: "testHelper",
+      light: true
+    }));
+
+    var textInput = function textInput() {
+      return wrapper.find('input');
+    };
+
+    describe('input', function () {
+      it('renders as expected', function () {
+        expect(textInput().length).toBe(1);
+      });
+      it('has the expected classes', function () {
+        expect(textInput().hasClass('bx--text-input')).toEqual(true);
+      });
+      it('should add extra classes that are passed via className', function () {
+        expect(textInput().hasClass('extra-class')).toEqual(true);
+      });
+      it('has the expected classes for light', function () {
+        wrapper.setProps({
+          light: true
+        });
+        expect(textInput().hasClass('bx--text-input--light')).toEqual(true);
+      });
+      it('should set type as expected', function () {
+        expect(textInput().props().type).toEqual('text');
+        wrapper.setProps({
+          type: 'email'
+        });
+        expect(textInput().props().type).toEqual('email');
+      });
+      it('should set value as expected', function () {
+        expect(textInput().props().defaultValue).toEqual(undefined);
+        wrapper.setProps({
+          defaultValue: 'test'
+        });
+        expect(textInput().props().defaultValue).toEqual('test');
+      });
+      it('should set disabled as expected', function () {
+        expect(textInput().props().disabled).toEqual(false);
+        wrapper.setProps({
+          disabled: true
+        });
+        expect(textInput().props().disabled).toEqual(true);
+      });
+      it('should set placeholder as expected', function () {
+        expect(textInput().props().placeholder).not.toBeDefined();
+        wrapper.setProps({
+          placeholder: 'Enter text'
+        });
+        expect(textInput().props().placeholder).toEqual('Enter text');
+      });
+    });
+    describe('label', function () {
+      wrapper.setProps({
+        labelText: 'Email Input'
+      });
+      var renderedLabel = wrapper.find('label');
+      it('renders a label', function () {
+        expect(renderedLabel.length).toBe(1);
+      });
+      it('has the expected classes', function () {
+        expect(renderedLabel.hasClass('bx--label')).toEqual(true);
+      });
+      it('should set label as expected', function () {
+        expect(renderedLabel.text()).toEqual('Email Input');
+      });
+    });
+    describe('helper', function () {
+      it('renders a helper', function () {
+        var renderedHelper = wrapper.find('.bx--form__helper-text');
+        expect(renderedHelper.length).toEqual(1);
+      });
+      it('renders children as expected', function () {
+        wrapper.setProps({
+          helperText: React.createElement("span", null, "This helper text has ", React.createElement("a", {
+            href: "#"
+          }, "a link"), ".")
+        });
+        var renderedHelper = wrapper.find('.bx--form__helper-text');
+        expect(renderedHelper.props().children).toEqual(React.createElement("span", null, "This helper text has ", React.createElement("a", {
+          href: "#"
+        }, "a link"), "."));
+      });
+      it('should set helper text as expected', function () {
+        wrapper.setProps({
+          helperText: 'Helper text'
+        });
+        var renderedHelper = wrapper.find('.bx--form__helper-text');
+        expect(renderedHelper.text()).toEqual('Helper text');
+      });
+    });
+  });
+  describe('events', function () {
+    describe('disabled textinput', function () {
+      var onClick = jest.fn();
+      var onChange = jest.fn();
+      var wrapper = shallow(React.createElement(TextInput, {
+        id: "test",
+        labelText: "testlabel",
+        onClick: onClick,
+        onChange: onChange,
+        disabled: true
+      }));
+      var input = wrapper.find('input');
+      it('should not invoke onClick', function () {
+        input.simulate('click');
+        expect(onClick).not.toBeCalled();
+      });
+      it('should not invoke onChange', function () {
+        input.simulate('change');
+        expect(onChange).not.toBeCalled();
+      });
+    });
+    describe('enabled textinput', function () {
+      var onClick = jest.fn();
+      var onChange = jest.fn();
+      var wrapper = shallow(React.createElement(TextInput, {
+        labelText: "testlabel",
+        id: "test",
+        onClick: onClick,
+        onChange: onChange
+      }));
+      var input = wrapper.find('input');
+      var eventObject = {
+        target: {
+          defaultValue: 'test'
+        }
+      };
+      it('should invoke onClick when input is clicked', function () {
+        input.simulate('click');
+        expect(onClick).toBeCalled();
+      });
+      it('should invoke onChange when input value is changed', function () {
+        input.simulate('change', eventObject);
+        expect(onChange).toBeCalledWith(eventObject);
+      });
+    });
+  });
+});

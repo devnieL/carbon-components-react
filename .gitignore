@@ -1,9 +1,9 @@
 # Ignore generated folders
 node_modules
-es
-lib
-umd
-storybook-static
+#es
+#lib
+#umd
+#storybook-static
 
 # Logs
 *.log
