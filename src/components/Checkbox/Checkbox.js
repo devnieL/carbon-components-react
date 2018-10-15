@@ -1,52 +1,74 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames';
 
-const Checkbox = ({
-  className,
-  id,
-  labelText,
-  onChange,
-  indeterminate,
-  hideLabel,
-  wrapperClassName,
-  title = '',
-  ...other
-}) => {
-  let input;
-  const labelClasses = classNames('bx--checkbox-label', className);
-  const innerLabelClasses = classNames({
-    'bx--visually-hidden': hideLabel,
-  });
-  const wrapperClasses = classNames(
-    'bx--form-item',
-    'bx--checkbox-wrapper',
-    wrapperClassName
-  );
+class Checkbox extends Component {
 
-  return (
-    <div className={wrapperClasses}>
-      <input
-        {...other}
-        type="checkbox"
-        onChange={evt => {
-          onChange(input.checked, id, evt);
-        }}
-        className="bx--checkbox"
-        id={id}
-        ref={el => {
-          input = el;
-          if (input) {
-            input.indeterminate = indeterminate;
-          }
-        }}
-      />
-      <label htmlFor={id} className={labelClasses} title={title || null}>
-        <span className={innerLabelClasses}>{labelText}</span>
-      </label>
-    </div>
-  );
-};
+  constructor(props){
+    super(props);
+    this.state = {
+      checked : props.checked
+    }
+  }
+  
+  onChange = (checked, id, event) => {
+    const {onChange} = this.props;
+    this.setState({
+      checked : checked
+    });
+    if(onChange) onChange(checked, id, event);
+  }
+
+  render () {
+
+    let {checked} = this.state;
+
+    const {
+      className,
+      id,
+      labelText,
+      indeterminate,
+      hideLabel,
+      wrapperClassName,
+      title = '',
+      ...other
+    } = this.props;
+
+    let input;
+    const labelClasses = classNames('bx--checkbox-label', className);
+    const innerLabelClasses = classNames({
+      'bx--visually-hidden': hideLabel,
+    });
+    const wrapperClasses = classNames(
+      'bx--form-item',
+      'bx--checkbox-wrapper',
+      wrapperClassName
+    );
+
+    return (
+      <div className={wrapperClasses} data-checked={(checked != null)?checked:other.defaultChecked}>
+        <input
+          {...other}
+          type="checkbox"
+          onChange={evt => {
+            this.onChange(input.checked, id, evt);
+          }}
+          className="bx--checkbox"
+          id={id}
+          ref={el => {
+            input = el;
+            if (input) {
+              input.indeterminate = indeterminate;
+            }
+          }}
+        />
+        <label htmlFor={id} className={labelClasses} title={title || null}>
+          <span className={innerLabelClasses}>{labelText}</span>
+        </label>
+      </div>
+    )
+  }
+}
 
 Checkbox.propTypes = {
   /**
