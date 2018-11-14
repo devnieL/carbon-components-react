@@ -37,6 +37,11 @@ export default class RadioButton extends React.Component {
     labelText: PropTypes.node.isRequired,
 
     /**
+     * Provide position (left, right, top, bottom) relative to the radio button.
+     */
+    labelPosition: PropTypes.string,
+
+    /**
      * Provide a name for the underlying <input> node
      */
     name: PropTypes.string,
@@ -54,6 +59,7 @@ export default class RadioButton extends React.Component {
   };
 
   static defaultProps = {
+    labelPosition: "right",
     onChange: () => {},
   };
 
@@ -66,12 +72,14 @@ export default class RadioButton extends React.Component {
   };
 
   render() {
+
+    const { labelText, labelPosition, ...other } = this.props;
+
     const wrapperClasses = classNames(
-      'radioButtonWrapper',
+      'bx--radio-button-wrapper',
+      `bx--radio-button-wrapper--label-${labelPosition}`,
       this.props.className
     );
-
-    const { labelText, ...other } = this.props;
 
     return (
       <div className={wrapperClasses}>
@@ -82,9 +90,9 @@ export default class RadioButton extends React.Component {
           onChange={this.handleChange}
           id={this.uid}
         />
-        <label htmlFor={this.uid} className="bx--radio-button__label">
+        <label htmlFor={this.uid} className={`bx--radio-button__label`}>
           <span className="bx--radio-button__appearance" />
-          {labelText}
+          <span className="bx--radio-button__label-text">{labelText}</span>
         </label>
       </div>
     );

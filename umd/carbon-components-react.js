@@ -19496,12 +19496,12 @@
     }, {
       key: "render",
       value: function render() {
-        var wrapperClasses = classNames('radioButtonWrapper', this.props.className);
-
         var _this$props = this.props,
             labelText = _this$props.labelText,
-            other = _objectWithoutProperties(_this$props, ["labelText"]);
+            labelPosition = _this$props.labelPosition,
+            other = _objectWithoutProperties(_this$props, ["labelText", "labelPosition"]);
 
+        var wrapperClasses = classNames('bx--radio-button-wrapper', "bx--radio-button-wrapper--label-".concat(labelPosition), this.props.className);
         return React__default.createElement("div", {
           className: wrapperClasses
         }, React__default.createElement("input", _extends({}, other, {
@@ -19514,7 +19514,9 @@
           className: "bx--radio-button__label"
         }, React__default.createElement("span", {
           className: "bx--radio-button__appearance"
-        }), labelText));
+        }), React__default.createElement("span", {
+          className: "bx--radio-button__label-text"
+        }, labelText)));
       }
     }]);
 
@@ -19554,6 +19556,11 @@
     labelText: PropTypes__default.node.isRequired,
 
     /**
+     * Provide position (left, right, top, bottom) relative to the radio button.
+     */
+    labelPosition: PropTypes__default.string,
+
+    /**
      * Provide a name for the underlying <input> node
      */
     name: PropTypes__default.string,
@@ -19571,6 +19578,7 @@
   });
 
   _defineProperty(RadioButton, "defaultProps", {
+    labelPosition: "right",
     onChange: function onChange() {}
   });
 
@@ -19638,10 +19646,11 @@
         var _this$props = this.props,
             disabled = _this$props.disabled,
             className = _this$props.className;
+        var groupClasses = classNames('bx--radio-button-group', this.props.className);
         return React__default.createElement("div", {
           className: "bx--form-item"
         }, React__default.createElement("div", {
-          className: className,
+          className: groupClasses,
           disabled: disabled
         }, this.getRadioButtons()));
       }
@@ -19702,8 +19711,7 @@
   _defineProperty(RadioButtonGroup, "defaultProps", {
     onChange:
     /* istanbul ignore next */
-    function onChange() {},
-    className: 'bx--radio-button-group'
+    function onChange() {}
   });
 
   /**

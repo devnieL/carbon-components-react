@@ -27,6 +27,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 import PropTypes from 'prop-types';
 import React from 'react';
 import RadioButton from '../RadioButton';
+import classNames from 'classnames';
 import warning from 'warning';
 
 var RadioButtonGroup =
@@ -93,10 +94,11 @@ function (_React$Component) {
       var _this$props = this.props,
           disabled = _this$props.disabled,
           className = _this$props.className;
+      var groupClasses = classNames('bx--radio-button-group', this.props.className);
       return React.createElement("div", {
         className: "bx--form-item"
       }, React.createElement("div", {
-        className: className,
+        className: groupClasses,
         disabled: disabled
       }, this.getRadioButtons()));
     }
@@ -157,8 +159,7 @@ _defineProperty(RadioButtonGroup, "propTypes", {
 _defineProperty(RadioButtonGroup, "defaultProps", {
   onChange:
   /* istanbul ignore next */
-  function onChange() {},
-  className: 'bx--radio-button-group'
+  function onChange() {}
 });
 
 export { RadioButtonGroup as default };

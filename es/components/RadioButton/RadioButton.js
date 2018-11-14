@@ -62,12 +62,12 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var wrapperClasses = classNames('radioButtonWrapper', this.props.className);
-
       var _this$props = this.props,
           labelText = _this$props.labelText,
-          other = _objectWithoutProperties(_this$props, ["labelText"]);
+          labelPosition = _this$props.labelPosition,
+          other = _objectWithoutProperties(_this$props, ["labelText", "labelPosition"]);
 
+      var wrapperClasses = classNames('bx--radio-button-wrapper', "bx--radio-button-wrapper--label-".concat(labelPosition), this.props.className);
       return React.createElement("div", {
         className: wrapperClasses
       }, React.createElement("input", _extends({}, other, {
@@ -80,7 +80,9 @@ function (_React$Component) {
         className: "bx--radio-button__label"
       }, React.createElement("span", {
         className: "bx--radio-button__appearance"
-      }), labelText));
+      }), React.createElement("span", {
+        className: "bx--radio-button__label-text"
+      }, labelText)));
     }
   }]);
 
@@ -120,6 +122,11 @@ _defineProperty(RadioButton, "propTypes", {
   labelText: PropTypes.node.isRequired,
 
   /**
+   * Provide position (left, right, top, bottom) relative to the radio button.
+   */
+  labelPosition: PropTypes.string,
+
+  /**
    * Provide a name for the underlying <input> node
    */
   name: PropTypes.string,
@@ -137,6 +144,7 @@ _defineProperty(RadioButton, "propTypes", {
 });
 
 _defineProperty(RadioButton, "defaultProps", {
+  labelPosition: "right",
   onChange: function onChange() {}
 });
 
