@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import { iconChevronLeft, iconChevronRight } from 'carbon-icons';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Icon from '../Icon';
 import Select from '../Select';
 import SelectItem from '../SelectItem';

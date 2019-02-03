@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Icon from '../Icon';
 import classNames from 'classnames';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import { ButtonTypes } from '../../prop-types/types';
 import { componentsX } from '../../internal/FeatureFlags';
 

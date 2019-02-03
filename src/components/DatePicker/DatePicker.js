@@ -11,7 +11,7 @@ import classNames from 'classnames';
 import flatpickr from 'flatpickr';
 import l10n from 'flatpickr/dist/l10n/index';
 import rangePlugin from 'flatpickr/dist/plugins/rangePlugin';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import DatePickerInput from '../DatePickerInput';
 import Icon from '../Icon';
 import { componentsX } from '../../internal/FeatureFlags';

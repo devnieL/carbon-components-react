@@ -1,6 +1,6 @@
 {
   "name": "@devniel/carbon-components-react",
-  "version": "5.5.1.1",
+  "version": "5.5.1-1",
   "description": "A React wrapper for carbon-components",
   "license": "Apache-2",
   "main": "lib/index.js",
@@ -177,7 +177,7 @@
     "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-react-docgen": "^2.0.0",
     "bowser": "^1.6.1",
-    "carbon-components": "git://github.com/devnieL/carbon-components.git#da",
+    "@devniel/carbon-components": "7.2.1-1",
     "carbon-icons": "^7.0.5",
     "chalk": "^2.3.0",
     "cli-table": "^0.3.0",

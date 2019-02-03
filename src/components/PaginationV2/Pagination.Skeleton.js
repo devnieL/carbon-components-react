@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import SkeletonText from '../SkeletonText';
 
 const { prefix } = settings;

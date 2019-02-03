@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import ListBoxMenuItem from './ListBoxMenuItem';
 import childrenOfType from '../../prop-types/childrenOfType';
 

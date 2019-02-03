@@ -13,7 +13,7 @@ import classNames from 'classnames';
 import { iconInfoGlyph } from 'carbon-icons';
 // TODO: import { Information } from '@carbon/icons-react';
 import Information from '@carbon/icons-react/lib/information/16';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import FloatingMenu, {
   DIRECTION_LEFT,
   DIRECTION_TOP,

@@ -9,7 +9,7 @@ import React from 'react';
 import Icon from '../Icon';
 import SkeletonText from '../SkeletonText';
 import { iconChevronRight } from 'carbon-icons';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 
 const { prefix } = settings;
 

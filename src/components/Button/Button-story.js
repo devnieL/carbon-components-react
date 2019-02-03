@@ -11,7 +11,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs';
 import { iconAddSolid, iconSearch } from 'carbon-icons';
 import { AddFilled16, Search16 } from '@carbon/icons-react';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Button from '../Button';
 import ButtonSkeleton from '../Button/Button.Skeleton';
 import { componentsX } from '../../internal/FeatureFlags';

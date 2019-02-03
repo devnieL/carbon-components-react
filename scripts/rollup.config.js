@@ -87,7 +87,7 @@ module.exports = {
     ...prodSettings,
   ],
   external: peerDependencies.filter(
-    dependency => dependency !== 'carbon-components'
+    dependency => dependency !== '@devniel/carbon-components'
   ),
   output: {
     name: 'CarbonComponentsReact',

@@ -8,7 +8,7 @@
 import cx from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Icon from '../Icon';
 import isRequiredOneOf from '../../prop-types/isRequiredOneOf';
 

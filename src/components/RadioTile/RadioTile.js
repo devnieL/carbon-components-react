@@ -11,7 +11,7 @@ import uid from '../../tools/uniqueId';
 import Icon from '../Icon';
 import { iconCheckmarkSolid } from 'carbon-icons';
 import classNames from 'classnames';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 // TODO: import { CheckmarkFilled16 } from '@carbon/icons-react';
 import CheckmarkFilled from '@carbon/icons-react/lib/checkmark--filled/16';
 import { componentsX } from '../../internal/FeatureFlags';

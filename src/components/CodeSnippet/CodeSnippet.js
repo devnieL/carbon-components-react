@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 // TODO: import { ChevronDown16 } from '@carbon/icons-react';
 import ChevronDown16 from '@carbon/icons-react/lib/chevron--down/16';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Copy from '../Copy';
 import CopyButton from '../CopyButton';
 import Icon from '../Icon';

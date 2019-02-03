@@ -8,7 +8,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 
 const { prefix } = settings;
 

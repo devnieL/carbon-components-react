@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 import { iconCaretDown } from 'carbon-icons';
 // TODO: import { ChevronDown16 } from '@carbon/icons-react';
 import ChevronDown16 from '@carbon/icons-react/lib/chevron--down/16';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Icon from '../Icon';
 import { componentsX } from '../../internal/FeatureFlags';
 

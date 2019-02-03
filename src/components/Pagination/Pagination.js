@@ -11,7 +11,7 @@ import classnames from 'classnames';
 import debounce from 'lodash.debounce';
 import warning from 'warning';
 import { iconChevronLeft, iconChevronRight } from 'carbon-icons';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Icon from '../Icon';
 import Select from '../Select';
 import SelectItem from '../SelectItem';

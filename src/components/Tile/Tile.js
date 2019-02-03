@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { iconCheckmarkSolid, iconChevronDown } from 'carbon-icons';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 // TODO: import { CheckmarkFilled16 } from '@carbon/icons-react';
 import CheckmarkFilled from '@carbon/icons-react/lib/checkmark--filled/16';
 // TODO: import { ChevronDown16 } from '@carbon/icons-react';

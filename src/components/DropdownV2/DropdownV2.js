@@ -9,7 +9,7 @@ import cx from 'classnames';
 import Downshift from 'downshift';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import ListBox, { PropTypes as ListBoxPropTypes } from '../ListBox';
 
 const { prefix } = settings;

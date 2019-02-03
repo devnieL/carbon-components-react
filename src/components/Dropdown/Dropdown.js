@@ -10,7 +10,7 @@ import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 import warning from 'warning';
 import { iconCaretDown } from 'carbon-icons';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import ClickListener from '../../internal/ClickListener';
 import Icon from '../Icon';
 

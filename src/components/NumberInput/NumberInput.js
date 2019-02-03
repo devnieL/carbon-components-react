@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { iconCaretUp, iconCaretDown } from 'carbon-icons';
 import classNames from 'classnames';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 // TODO: import { WarningFilled16 } from '@carbon/icons-react';
 import WarningFilled16 from '@carbon/icons-react/lib/warning--filled/16';
 // TODO: import { CaretDownGlyph } from '@carbon/icons-react';

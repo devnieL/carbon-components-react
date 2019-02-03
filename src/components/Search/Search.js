@@ -13,7 +13,7 @@ import { iconSearch, iconCloseSolid } from 'carbon-icons';
 import Search16 from '@carbon/icons-react/lib/search/16';
 // TODO: import Close16 from '@carbon/icons-react';
 import Close16 from '@carbon/icons-react/lib/close/16';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Icon from '../Icon';
 import { componentsX } from '../../internal/FeatureFlags';
 

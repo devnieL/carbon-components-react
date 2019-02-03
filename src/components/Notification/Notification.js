@@ -15,7 +15,7 @@ import {
   iconInfoSolid,
   iconWarningSolid,
 } from 'carbon-icons';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import Icon from '../Icon';
 // temporary workaround for a11y warning icon. TODO: for @carbon/icons-react
 import a11yIconWarningSolid from './a11yIconWarningSolid';

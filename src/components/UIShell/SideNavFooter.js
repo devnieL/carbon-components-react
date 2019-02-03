@@ -6,7 +6,7 @@
  */
 
 import { Close20, ChevronRight20 } from '@carbon/icons-react';
-import { settings } from 'carbon-components';
+import { settings } from '@devniel/carbon-components';
 import cx from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
