@@ -927,13 +927,23 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-alpha.31.tgz#41224409d085a577463b8681399572362dc601cb"
   integrity sha512-Bl+6r7LXRZ3yhNFyjJ2lr7tDHH49DP9fT7I0CRQjDmJO4yQBlK3O1y1EvGa/NiiABlOmjObHGuRyNfqsswDfPQ==
 
-"@carbon/icons-react@^0.0.1-alpha.26":
+"@carbon/icons-react@^0.0.1-alpha.31":
   version "0.0.1-alpha.31"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.31.tgz#d4e3f1c49137496d9f7a42a572dd707b9aeb0ec2"
   integrity sha512-9/5/vCPQLvvyzDUP7gRbbb94qjqTKtEXBix5rkkK9WSzoZOqxy9Lj4E6hMqjQOAFOO+YGeufqFjYSfhxnxLB6g==
   dependencies:
     "@carbon/icon-helpers" "0.0.1-alpha.31"
     prop-types "^15.6.2"
+
+"@devniel/carbon-components@7.2.1-1":
+  version "7.2.1-1"
+  resolved "https://registry.yarnpkg.com/@devniel/carbon-components/-/carbon-components-7.2.1-1.tgz#bc5c0b1bece2ae0c8db4500a2f791ead684f7923"
+  integrity sha512-yTgJ8CDrXlOqYtLdM7SZ8gY+ICxV4MI9yY3E7SQJ0NV2adIZX5H0ua23oBu5YnDRgHEfzeKugCFFF/P9rl1sVQ==
+  dependencies:
+    carbon-icons "^7.0.7"
+    flatpickr "4.5.2"
+    lodash.debounce "^4.0.8"
+    warning "^3.0.0"
 
 "@emotion/cache@^0.8.8":
   version "0.8.8"
@@ -3157,15 +3167,6 @@ capture-stack-trace@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha512-mYQLZnx5Qt1JgB1WEiMCf2647plpGeQ2NMR/5L0HNZzGQo4fuSPnK+wjfPnKZV0aiJDgzmWqqkV/g7JD+DW0qw==
-
-"carbon-components@git://github.com/devnieL/carbon-components.git#da":
-  version "7.2.1"
-  resolved "git://github.com/devnieL/carbon-components.git#24c866e5fb5519a1fa1c14c84f909a5037ef3649"
-  dependencies:
-    carbon-icons "^7.0.7"
-    flatpickr "4.5.2"
-    lodash.debounce "^4.0.8"
-    warning "^3.0.0"
 
 carbon-icons@^7.0.5, carbon-icons@^7.0.7:
   version "7.0.7"
