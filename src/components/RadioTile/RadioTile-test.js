@@ -63,7 +63,7 @@ describe('RadioButton', () => {
       });
 
       it('should render a span with the correct class', () => {
-        const span = label.find('span');
+        const span = label.find('span').first();
         expect(span.hasClass('bx--radio-button__appearance')).toEqual(true);
       });
 
@@ -86,7 +86,7 @@ describe('RadioButton', () => {
 
     describe('wrapper', () => {
       it('should have the correct class', () => {
-        expect(div.hasClass('radioButtonWrapper')).toEqual(true);
+        expect(div.hasClass('bx--radio-button-wrapper')).toEqual(true);
       });
 
       it('should have extra classes applied', () => {
