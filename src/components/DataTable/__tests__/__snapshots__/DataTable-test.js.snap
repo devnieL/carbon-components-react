@@ -132,64 +132,66 @@ exports[`DataTable selection -- radio buttons should not have select-all checkbo
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field A
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field A
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                   <TableHeader
@@ -205,64 +207,66 @@ exports[`DataTable selection -- radio buttons should not have select-all checkbo
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field B
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field B
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                 </tr>
@@ -566,64 +570,66 @@ exports[`DataTable selection -- radio buttons should render 1`] = `
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field A
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field A
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                   <TableHeader
@@ -639,64 +645,66 @@ exports[`DataTable selection -- radio buttons should render 1`] = `
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field B
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field B
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                 </tr>
@@ -1088,64 +1096,66 @@ exports[`DataTable selection should have select-all default to un-checked if no 
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field A
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field A
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                   <TableHeader
@@ -1161,64 +1171,66 @@ exports[`DataTable selection should have select-all default to un-checked if no 
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field B
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field B
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                 </tr>
@@ -1566,64 +1578,66 @@ exports[`DataTable selection should render 1`] = `
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field A
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field A
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                   <TableHeader
@@ -1639,64 +1653,66 @@ exports[`DataTable selection should render 1`] = `
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field B
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field B
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                 </tr>
@@ -2670,64 +2686,66 @@ exports[`DataTable should render 1`] = `
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field A
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field A
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                   <TableHeader
@@ -2743,64 +2761,66 @@ exports[`DataTable should render 1`] = `
                       aria-sort="none"
                       scope="col"
                     >
-                      <button
-                        className="bx--table-sort-v2"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="bx--table-header-label"
+                      <div>
+                        <button
+                          className="bx--table-sort-v2"
+                          onClick={[Function]}
                         >
-                          Field B
-                        </span>
-                        <Icon
-                          className="bx--table-sort-v2__icon"
-                          description="Sort rows by this header in ascending order"
-                          fillRule="evenodd"
-                          icon={
-                            Object {
-                              "height": "5",
-                              "id": "icon--caret--up",
-                              "name": "icon--caret--up",
-                              "styles": "",
-                              "svgData": Object {
-                                "circles": "",
-                                "ellipses": "",
-                                "paths": Array [
-                                  Object {
-                                    "d": "M0 5L5 .002 10 5z",
-                                  },
-                                ],
-                                "polygons": "",
-                                "polylines": "",
-                                "rects": "",
-                              },
-                              "tags": "icon--caret--up",
-                              "viewBox": "0 0 10 5",
-                              "width": "10",
-                            }
-                          }
-                          role="img"
-                        >
-                          <svg
-                            alt="Sort rows by this header in ascending order"
-                            aria-label="Sort rows by this header in ascending order"
-                            className="bx--table-sort-v2__icon"
-                            fillRule="evenodd"
-                            height="5"
-                            role="img"
-                            viewBox="0 0 10 5"
-                            width="10"
+                          <span
+                            className="bx--table-header-label"
                           >
-                            <title>
-                              Sort rows by this header in ascending order
-                            </title>
-                            <path
-                              d="M0 5L5 .002 10 5z"
-                              key="key0"
-                            />
-                          </svg>
-                        </Icon>
-                      </button>
+                            Field B
+                          </span>
+                          <Icon
+                            className="bx--table-sort-v2__icon"
+                            description="Sort rows by this header in ascending order"
+                            fillRule="evenodd"
+                            icon={
+                              Object {
+                                "height": "5",
+                                "id": "icon--caret--up",
+                                "name": "icon--caret--up",
+                                "styles": "",
+                                "svgData": Object {
+                                  "circles": "",
+                                  "ellipses": "",
+                                  "paths": Array [
+                                    Object {
+                                      "d": "M0 5L5 .002 10 5z",
+                                    },
+                                  ],
+                                  "polygons": "",
+                                  "polylines": "",
+                                  "rects": "",
+                                },
+                                "tags": "icon--caret--up",
+                                "viewBox": "0 0 10 5",
+                                "width": "10",
+                              }
+                            }
+                            role="img"
+                          >
+                            <svg
+                              alt="Sort rows by this header in ascending order"
+                              aria-label="Sort rows by this header in ascending order"
+                              className="bx--table-sort-v2__icon"
+                              fillRule="evenodd"
+                              height="5"
+                              role="img"
+                              viewBox="0 0 10 5"
+                              width="10"
+                            >
+                              <title>
+                                Sort rows by this header in ascending order
+                              </title>
+                              <path
+                                d="M0 5L5 .002 10 5z"
+                                key="key0"
+                              />
+                            </svg>
+                          </Icon>
+                        </button>
+                      </div>
                     </th>
                   </TableHeader>
                 </tr>
