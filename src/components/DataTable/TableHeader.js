@@ -12,6 +12,7 @@ import { iconCaretUp } from 'carbon-icons';
 import { settings } from '@devniel/carbon-components';
 import Icon from '../Icon';
 import { sortStates } from './state/sorting';
+import { componentsX } from '../../internal/FeatureFlags';
 
 const { prefix } = settings;
 
@@ -47,6 +48,7 @@ const sortDirections = {
 
 const TableHeader = ({
   className: headerClassName,
+  contentClassName,
   children,
   isSortable,
   isSortHeader,
@@ -64,30 +66,45 @@ const TableHeader = ({
     );
   }
 
-  const className = cx(headerClassName, {
+  const buttonClassName = cx({
     [`${prefix}--table-sort-v2`]: true,
     [`${prefix}--table-sort-v2--active`]:
       isSortHeader && sortDirection !== sortStates.NONE,
     [`${prefix}--table-sort-v2--ascending`]:
       isSortHeader && sortDirection === sortStates.DESC,
   });
+
   const ariaSort = !isSortHeader ? 'none' : sortDirections[sortDirection];
 
   return (
     <th scope={scope} className={headerClassName} aria-sort={ariaSort}>
-      <button className={className} onClick={onClick} {...rest}>
-        <span className={`${prefix}--table-header-label`}>{children}</span>
-        <Icon
-          className={`${prefix}--table-sort-v2__icon`}
-          icon={iconCaretUp}
-          description={t('carbon.table.header.icon.description', {
-            header: children,
-            sortDirection,
-            isSortHeader,
-            sortStates,
-          })}
-        />
-      </button>
+      <div className={contentClassName}>
+        <button className={buttonClassName} onClick={onClick} {...rest}>
+          <span className={`${prefix}--table-header-label`}>{children}</span>
+          {componentsX ? (
+            <CaretUpGlyph
+              className={`${prefix}--table-sort-v2__icon`}
+              aria-label={t('carbon.table.header.icon.description', {
+                header: children,
+                sortDirection,
+                isSortHeader,
+                sortStates,
+              })}
+            />
+          ) : (
+            <Icon
+              className={`${prefix}--table-sort-v2__icon`}
+              icon={iconCaretUp}
+              description={t('carbon.table.header.icon.description', {
+                header: children,
+                sortDirection,
+                isSortHeader,
+                sortStates,
+              })}
+            />
+          )}
+        </button>
+      </div>
     </th>
   );
 };

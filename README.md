@@ -3,6 +3,8 @@ A fork of https://github.com/IBM/carbon-components-react with changes for:
 - Tooltip
 - Radio Button
 - Check box
+- DataTable: tools/normalize.js
+- DataTable: TableHeader
 
 ## Usage
 
