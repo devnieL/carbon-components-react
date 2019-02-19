@@ -8,6 +8,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import InlineCheckbox from '../InlineCheckbox';
+import RadioButton from '../RadioButton';
 
 const TableSelectRow = ({
   ariaLabel,
@@ -16,19 +17,24 @@ const TableSelectRow = ({
   name,
   onSelect,
   disabled,
-}) => (
-  <td>
-    <InlineCheckbox
-      id={id}
-      name={name}
-      onClick={onSelect}
-      checked={checked}
-      ariaLabel={ariaLabel}
-      disabled={disabled}
-    />
-  </td>
-);
-
+  radio,
+  className,
+}) => {
+  const selectionInputProps = {
+    id,
+    name,
+    onClick: onSelect,
+    checked,
+    ariaLabel,
+    disabled,
+  };
+  const InlineInputComponent = radio ? RadioButton : InlineCheckbox;
+  return (
+    <td className={className}>
+      <InlineInputComponent {...selectionInputProps} />
+    </td>
+  );
+};
 TableSelectRow.propTypes = {
   /**
    * Specify the aria label for the underlying input control
@@ -54,6 +60,16 @@ TableSelectRow.propTypes = {
    * Provide a handler to listen to when a user initiates a selection request
    */
   onSelect: PropTypes.func.isRequired,
+
+  /**
+   * Specify whether the control should be a radio button or inline checkbox
+   */
+  radio: PropTypes.bool,
+
+  /**
+   * The CSS class names of the cell that wraps the underlying input control
+   */
+  className: PropTypes.string,
 };
 
 export default TableSelectRow;
