@@ -76,8 +76,16 @@ const TableHeader = ({
 
   const ariaSort = !isSortHeader ? 'none' : sortDirections[sortDirection];
 
+  const otherProps = {
+    colSpan: rest.colSpan,
+  };
+
   return (
-    <th scope={scope} className={headerClassName} aria-sort={ariaSort}>
+    <th
+      scope={scope}
+      className={headerClassName}
+      aria-sort={ariaSort}
+      {...otherProps}>
       <div className={contentClassName}>
         <button className={buttonClassName} onClick={onClick} {...rest}>
           <span className={`${prefix}--table-header-label`}>{children}</span>
