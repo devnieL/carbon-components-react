@@ -6,6 +6,7 @@
  */
 
 import { getCellId } from './cells';
+import flat from './flat';
 import objectPath from 'object-path';
 
 /**
@@ -21,6 +22,8 @@ const normalize = (rows, headers, prevState = {}) => {
   const rowsById = {};
   const cellsById = {};
 
+  const flatHeaders = flat(headers);
+
   rows.forEach((row, i) => {
     rowIds[i] = row.id;
     // Initialize the row info and state values, namely for selection and
@@ -29,7 +32,7 @@ const normalize = (rows, headers, prevState = {}) => {
       id: row.id,
       isSelected: false,
       isExpanded: false,
-      cells: new Array(headers.length),
+      cells: new Array(flatHeaders),
     };
 
     // If we have a previous state, and the row existed in that previous state,
@@ -39,7 +42,7 @@ const normalize = (rows, headers, prevState = {}) => {
       rowsById[row.id].isExpanded = prevRowsByIds[row.id].isExpanded;
     }
 
-    headers.forEach(({ key }, i) => {
+    flatHeaders.forEach(({ key }, i) => {
       const id = getCellId(row.id, key);
       // Initialize the cell info and state values, namely for editing
       cellsById[id] = {

@@ -6,6 +6,7 @@
  */
 
 import { getCellId } from './cells';
+import flat from './flat';
 
 /**
  * Default implemention of how we filter rows internally. The idea behind this
@@ -22,7 +23,7 @@ import { getCellId } from './cells';
  */
 export const defaultFilterRows = ({ rowIds, headers, cellsById, inputValue }) =>
   rowIds.filter(rowId =>
-    headers.some(({ key }) => {
+    flat(headers).some(({ key }) => {
       const id = getCellId(rowId, key);
       return ('' + cellsById[id].value)
         .toLowerCase()
